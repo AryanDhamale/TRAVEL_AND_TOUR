@@ -1,0 +1,18 @@
+{
+  "name": "cold",
+  "version": "1.0.0",
+  "description": "MERN APP",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "LIWEN SHAO",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
