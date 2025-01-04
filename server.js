@@ -25,7 +25,7 @@ const start = function () {
     });
 
     app.all("*",(req,res,next)=>{
-        console.log("call me!");
+        console.log("default route");
         res.json({message : "The backend api's development are undergoing , so please wait till new update push"}).status(400);
     })
 }
