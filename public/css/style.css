@@ -153,14 +153,15 @@ header{
 }
 
 header .logo{
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color:#fff;
-  text-transform: uppercase;
+  display: flex;
+      align-items: flex-end;
+      width: 145px;
+  
 }
 
 header .logo span{
   color:var(--orange);
+  
 }
 
 header .navbar a{
@@ -184,7 +185,7 @@ header .icons i{
   color:#fff;
   cursor: pointer;
   margin-right: 2rem;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   border-bottom: 1px solid rgba(49, 41, 25, 0);
   transition: all .3s ease-in-out;
 }
@@ -961,3 +962,4 @@ header .search-bar-container label:hover{
   }
  
 }
+

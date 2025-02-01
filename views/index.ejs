@@ -32,16 +32,18 @@
 
     <div id="menu-bar" class="fas fa-bars"></div>
 
-    <a href="#" class="logo"><img src="/public/images/logo.gif" alt="logo"></a>
+    <a href="#" class="logo"><img src="/public/images/Logo.png " width="145px" display="flex" margin-left="0px" padding="0px" alt="logo"></a>
 
     <nav class="navbar">
         <a href="#home">home</a>
         <a href="#book">book</a>
         <a href="#packages">packages</a>
         <a href="#services">services</a>
+        <a href="#corporate">Corporate Travel</a>
+        <a href="#special">Specility Tours</a>
         <a href="#gallery">gallery</a>
         <a href="#review">review</a>
-        <a href="#contact">contact</a>
+        
     </nav>
 
     <div class="icons">
@@ -86,18 +88,57 @@
         <p>dicover new places with us, adventure awaits</p>
         <a href="#" class="btn">discover more</a>
     </div>
+    
+        <!-- <div class="controls">
+            <span class="vid-btn" data-src="/public/images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-5.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-5.mp4"></span>
+        </div>
 
-    <div class="controls">
-        <span class="vid-btn active" data-src="/public/images/vid-4.mp4"></span>
-        <span class="vid-btn" src="/public/images/vid-2.mp4"></span>
-        <span class="vid-btn" src="/public/images/vid-3.mp4"></span>
-        <span class="vid-btn" src="/public/images/vid-4.mp4"></span>
-        <span class="vid-btn" src="/public/images/vid-5.mp4"></span>
-    </div>
+        <div class="video-container">
+            <video src="/public/images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
+        </div> -->
 
-    <div class="video-container">
-        <video src="/public/images/vid-4.mp4" id="video-slider" loop autoplay muted></video>
-    </div>
+        <div class="video-container">
+            <video src="/public/images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    
+        <div class="controls">
+            <span class="vid-btn" data-src="/public/images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-5.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="/public/images/vid-5.mp4"></span>
+        </div>
+    
+        <script>
+            let video = document.getElementById('video-slider');
+            let buttons = document.querySelectorAll('.vid-btn');
+            let currentIndex = 0;
+            let videoSources = Array.from(buttons).map(btn => btn.getAttribute('data-src'));
+    
+            function changeVideo(index) {
+                video.src = videoSources[index];
+                buttons.forEach(btn => btn.classList.remove('active'));
+                buttons[index].classList.add('active');
+                currentIndex = index;
+            }
+    
+            // Manual video change
+            buttons.forEach((btn, index) => {
+                btn.addEventListener('click', () => {
+                    changeVideo(index);
+                });
+            });
+    
+            // Auto slide every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % videoSources.length;
+                changeVideo(currentIndex);
+            }, 5000); // Change every 5 seconds
+        </script>
 
 </section>
 
@@ -184,15 +225,15 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <!-- <div class="price"> $90.00 <span>$120.00</span> </div> -->
                 <a href="#" class="btn">book now</a>
             </div>
         </div>
 
         <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-2.jpg" data-lightbox="image-1" data-title="Hawaii"><img src="/public/images/p-2.jpg" alt="image"></a>
+            <a href="/public/images/p-2.jpg" data-lightbox="image-1" data-title="Kedarnath"><img src="/public/images/p-2.jpg" alt="image"></a>
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Kedarnath </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -201,15 +242,15 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> $70.00 <span>$100.00</span> </div>
+                <!-- <div class="price"> $70.00 <span>$100.00</span> </div> -->
                 <a href="#" class="btn">book now</a>
             </div>
         </div>
 
         <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-3.jpg" data-lightbox="image-3" data-title="Sydney"><img src="/public/images/p-3.jpg" alt="image"></a>
+            <a href="/public/images/p-3.jpg" data-lightbox="image-3" data-title="Nashik"><img src="/public/images/p-3.jpg" alt="image"></a>
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> sydney </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Nashik </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -218,7 +259,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> $130.00 <span>$150.00</span> </div>
+                <!-- <div class="price"> $130.00 <span>$150.00</span> </div> -->
                 <a href="#" class="btn">book now</a>
             </div>
         </div>
@@ -226,7 +267,7 @@
         <div class="box wow fadeInUp" data-wow-duration="2s">
             <a href="/public/images/p-4.jpg" data-lightbox="image-4" data-title="My caption"><img src="/public/images/p-4.jpg" alt="image"></a>
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Kanyakumari </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -235,7 +276,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> $50.00 <span>$90.00</span> </div>
+                <!-- <div class="price"> $50.00 <span>$90.00</span> </div> -->
                 <a href="#" class="btn">book now</a>
             </div>
         </div>
@@ -245,9 +286,9 @@
     <!-- section item start  -->
     <div class="box-container secound_carousel owl-carousel ">
         <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-5.jpg" data-lightbox="image-1" data-title="Singapur"><img src="/public/images/p-2.jpg" alt="image"></a>
+            <a href="/public/images/p-5.jpg" data-lightbox="image-1" data-title="Pune"><img src="/public/images/p-2.jpg" alt="image"></a>
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Singapur </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Pune </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -256,15 +297,15 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> $70.00 <span>$100.00</span> </div>
+                <!-- <div class="price"> $70.00 <span>$100.00</span> </div> -->
                 <a href="#" class="btn">book now</a>
             </div>
         </div>
 
         <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-6.jpg" data-lightbox="image-3" data-title="America"><img src="/public/images/p-3.jpg" alt="image"></a>
+            <a href="/public/images/p-6.jpg" data-lightbox="image-3" data-title="Kashmir"><img src="/public/images/p-3.jpg" alt="image"></a>
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> America </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Kashmir </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -273,15 +314,15 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> $130.00 <span>$150.00</span> </div>
+                <!-- <div class="price"> $130.00 <span>$150.00</span> </div> -->
                 <a href="#" class="btn">book now</a>
             </div>
         </div>
 
         <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-2.jpg" data-lightbox="image-4" data-title="Paris"><img src="/public/images/p-4.jpg" alt="image"></a>
+            <a href="/public/images/p-2.jpg" data-lightbox="image-4" data-title="Kanyakumari"><img src="/public/images/p-4.jpg" alt="image"></a>
             <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Kanyakumari </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -290,7 +331,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> $50.00 <span>$90.00</span> </div>
+                <!-- <div class="price"> $50.00 <span>$90.00</span> </div> -->
                 <a href="#" class="btn">book now</a>
             </div>
         </div>
@@ -371,7 +412,7 @@
     <div class="box-container">
 
         <div class="box wow fadeInUp"data-wow-duration="2s"  >
-            <img src="/public/images/g-1.jpg" alt="">
+            <img src="/public/images/p-1.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -379,7 +420,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-2.jpg" alt="">
+            <img src="/public/images/p-2.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -387,7 +428,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-3.jpg" alt="">
+            <img src="/public/images/p-3.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -395,7 +436,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-4.jpg" alt="">
+            <img src="/public/images/p-4.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -403,7 +444,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-5.jpg" alt="">
+            <img src="/public/images/p-5.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -411,7 +452,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-6.jpg" alt="">
+            <img src="/public/images/p-6.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -419,7 +460,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-7.jpg" alt="">
+            <img src="/public/images/p-1.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -427,7 +468,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-8.jpg" alt="">
+            <img src="/public/images/p-2.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -435,7 +476,7 @@
             </div>
         </div>
         <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/g-9.jpg" alt="">
+            <img src="/public/images/p-3.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
@@ -548,7 +589,7 @@
     <div class="row">
 
         <div class="image">
-            <img src=/public/images/contact-img.svg" alt="">
+            <img src=/public/images/call.jpg alt="">
         </div>
 
         <form action="">
@@ -561,7 +602,7 @@
                 <input type="text" placeholder="subject">
             </div>
             <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn btn-submit" value="send message">
+            <input type="submit" class="btn btn-submit" value="Send Request">
         </form>
 
     </div>
@@ -571,7 +612,7 @@
 <!-- contact section ends -->
 
 <!-- brand section  -->
-<section class="brand-container">
+<!-- <section class="brand-container">
 
     <div class="swiper-container brand-slider">
         <div class="swiper-wrapper">
@@ -584,7 +625,7 @@
         </div>
     </div>
 
-</section>
+</section> -->
 
 
 <!-- footer section  -->
@@ -595,14 +636,12 @@
 
         <div class="box">
             <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+            <p>Veer-Pawas Tourism is one <br>of the popular Travel Agency <br>located in ,Amravati listed under Travel Agency in Amravati.</p>
         </div>
         <div class="box">
             <h3>branch locations</h3>
             <a href="#">india</a>
-            <a href="#">USA</a>
-            <a href="#">japan</a>
-            <a href="#">france</a>
+            <p>49, 1st Floor, Gulshan Plaza, <br>Rajapeth, Amravati, Maharashtra, <br> India,India - 444605</p>
         </div>
         <div class="box">
             <h3>quick links</h3>
@@ -616,10 +655,10 @@
         </div>
         <div class="box">
             <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
+            <a href="https://www.facebook.com/veerpawastourism/">facebook</a>
+            <a href="https://www.instagram.com/veerpawastourism?igsh=MWNjOWtjYndvMzVleg==">instagram</a>
             <a href="#">twitter</a>
-            <a href="https://www.linkedin.com/in/tejasdhamale/">linkedin</a>
+            <a href="#">linkedin</a>
         </div>
 
     </div>
