@@ -25,6 +25,7 @@ async function sentData(data)
     }catch(err)
     {
         console.log({err : "LTA ERROR:10",err});
+        alert("there might be some inter-server issue , please kindly contact with team!");
     }
     Loading.disabled=false;
     bookingCon.style.display='block';
