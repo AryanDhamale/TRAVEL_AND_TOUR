@@ -1,6 +1,8 @@
 import express from "express";
 import path from 'path';
 import { fileURLToPath } from 'url';
+import emailjs from '@emailjs/nodejs';
+import 'dotenv/config';
 
 
 const app = express();
@@ -11,6 +13,8 @@ app.set("getPort", (process.env.PORT || 8080));
 app.set('view engin', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 app.use('/public/', express.static(path.join(__dirname, "/public")));
+app.use(express.urlencoded({extended : true}));
+app.use(express.json());
 
 
 const start = function () {
@@ -23,6 +27,26 @@ const start = function () {
     app.get('/', (req, res) => {
         res.render('index.ejs');
     });
+
+    app.post("/Loc",function(req,res,next){
+        const params=req.body;
+        if(params)
+        {
+           emailjs.send(process.env.SERVICE_ID,process.env.TEMPLATE_ID,params,{
+            publicKey : process.env.PUBLIC_KEY,
+            privateKey : process.env.PRIVATE_KEY
+           }).then((responce)=>{
+            // console.log({message : 'SUCCESS !' , responce});
+             res.json({message : 'success'}).status(200);
+           }).catch((err)=>{
+            // console.log({error : err, message : "FAILED"});
+             res.json({message : 'failed'}).status(400);
+           })
+        }else 
+        {
+            res.json({status : "bad request"}).status(400);
+        }
+    })
 
     app.all("*",(req,res,next)=>{
         console.log("default route");

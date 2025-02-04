@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour and travel agency</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="icon" href="https://preview.redd.it/what-if-apex-cybernetics-and-shao-industries-collaborated-v0-gw1q9rwubnwc1.jpg?width=505&format=pjpg&auto=webp&s=5cc6de17fe28cd31156fc422784b7ac073feba14">
+    <link rel="icon"
+        href="https://preview.redd.it/what-if-apex-cybernetics-and-shao-industries-collaborated-v0-gw1q9rwubnwc1.jpg?width=505&format=pjpg&auto=webp&s=5cc6de17fe28cd31156fc422784b7ac073feba14">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -22,73 +24,76 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="/public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
+
 <body>
-    
-<!-- header section starts  -->
 
-<header class="wow fadeInDown" data-wow-duration="4s" >
+    <!-- header section starts  -->
 
-    <div id="menu-bar" class="fas fa-bars"></div>
+    <header class="wow fadeInDown" data-wow-duration="4s">
 
-    <a href="#" class="logo"><img src="/public/images/Logo.png " width="145px" display="flex" margin-left="0px" padding="0px" alt="logo"></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
 
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#book">book</a>
-        <a href="#packages">packages</a>
-        <a href="#services">services</a>
-        <a href="#corporate">Corporate Travel</a>
-        <a href="#special">Specility Tours</a>
-        <a href="#gallery">gallery</a>
-        <a href="#review">review</a>
-        
-    </nav>
+        <a href="#" class="logo"><img src="/public/images/Logo.png " width="145px" display="flex" margin-left="0px"
+                padding="0px" alt="logo"></a>
 
-    <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#corporate">Corporate Travel</a>
+            <a href="#special">Specility Tours</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+
     </div>
 
-    <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
-    </form>
+    <!-- home section starts  -->
 
-</header>
+    <section class="home" id="home">
 
-<!-- header section ends -->
+        <div class="content wow fadeInUp" data-wow-duration="4s">
+            <h3>Bright your future with <span>travels</span></h3>
+            <p>dicover new places with us, adventure awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
 
-<!-- login form container  -->
-
-<div class="login-form-container">
-
-    <i class="fas fa-times" id="form-close"></i>
-
-    <form action="">
-        <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email">
-        <input type="password" class="box" placeholder="enter your password">
-        <input type="submit" value="login now" class="btn">
-        <input type="checkbox" id="remember">
-        <label for="remember">remember me</label>
-        <p>forget password? <a href="#">click here</a></p>
-        <p>don't have and account? <a href="#">register now</a></p>
-    </form>
-
-</div>
-
-<!-- home section starts  -->
-
-<section class="home"  id="home">
-
-    <div class="content wow fadeInUp"data-wow-duration="4s">
-        <h3>Bright your future with <span>travels</span></h3>
-        <p>dicover new places with us, adventure awaits</p>
-        <a href="#" class="btn">discover more</a>
-    </div>
-    
         <!-- <div class="controls">
             <span class="vid-btn" data-src="/public/images/vid-3.mp4"></span>
             <span class="vid-btn" data-src="/public/images/vid-5.mp4"></span>
@@ -104,7 +109,7 @@
         <div class="video-container">
             <video src="/public/images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
         </div>
-    
+
         <div class="controls">
             <span class="vid-btn" data-src="/public/images/vid-3.mp4"></span>
             <span class="vid-btn" data-src="/public/images/vid-5.mp4"></span>
@@ -112,27 +117,27 @@
             <span class="vid-btn" data-src="/public/images/vid-4.mp4"></span>
             <span class="vid-btn" data-src="/public/images/vid-5.mp4"></span>
         </div>
-    
+
         <script>
             let video = document.getElementById('video-slider');
             let buttons = document.querySelectorAll('.vid-btn');
             let currentIndex = 0;
             let videoSources = Array.from(buttons).map(btn => btn.getAttribute('data-src'));
-    
+
             function changeVideo(index) {
                 video.src = videoSources[index];
                 buttons.forEach(btn => btn.classList.remove('active'));
                 buttons[index].classList.add('active');
                 currentIndex = index;
             }
-    
+
             // Manual video change
             buttons.forEach((btn, index) => {
                 btn.addEventListener('click', () => {
                     changeVideo(index);
                 });
             });
-    
+
             // Auto slide every 5 seconds
             setInterval(() => {
                 currentIndex = (currentIndex + 1) % videoSources.length;
@@ -140,378 +145,92 @@
             }, 5000); // Change every 5 seconds
         </script>
 
-</section>
+    </section>
 
-<!-- home section ends -->
+    <!-- home section ends -->
 
-<!-- book section starts  -->
+    <!-- book section starts  -->
 
-<section class="book wow fadeInUp" data-wow-duration="4s" id="book" >
+    <section class="book wow fadeInUp" data-wow-duration="4s" id="book">
 
-    <h1 class="heading">
-        <span>b</span>
-        <span>o</span>
-        <span>o</span>
-        <span>k</span>
-        <span class="space"></span>
-        <span>n</span>
-        <span>o</span>
-        <span>w</span>
-    </h1>
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
 
-    <div class="row">
+        <div class="row">
 
-        <div class="image " data-aos="fade-right"
-        data-aos="fade-right"
-        data-aos-offset="10"
-        data-aos-duration="500">
-            <img src="/public/images/book-img.svg" alt="">
-        </div>
-
-        <form action="" data-aos="fade-up"data-aos-offset="40"
-        data-aos-offset="10"
-        data-aos-duration="600">
-            <div class="inputBox">
-                <h3>where to</h3>
-                <input type="text" placeholder="place name">
+            <div class="image " data-aos="fade-right" data-aos="fade-right" data-aos-offset="10"
+                data-aos-duration="500">
+                <img src="/public/images/book-img.svg" alt="">
             </div>
-            <div class="inputBox">
-                <h3>how many</h3>
-                <input type="number" placeholder="number of guests">
-            </div>
-            <div class="inputBox">
-                <h3>arrivals</h3>
-                <input type="date">
-            </div>
-            <div class="inputBox">
-                <h3>leaving</h3>
-                <input type="date">
-            </div>
-            <input type="submit" class="btn btn-submit" value="book now">
-        </form>
 
-    </div>
-
-</section>
-
-<!-- book section ends -->
-
-<!-- packages section starts  -->
-
-<section class="packages" id="packages">
-
-    <h1 class="heading wow fadeIn">
-        <span>p</span>
-        <span>a</span>
-        <span>c</span>
-        <span>k</span>
-        <span>a</span>
-        <span>g</span>
-        <span>e</span>
-        <span>s</span>
-    </h1>
-
-    <div class="box-container owl-carousel first_carousel">
-
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-1.jpg" data-lightbox="image-1" data-title="Mumbai"><img src="/public/images/p-1.jpg" alt="image"></a>
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+            <form action="#" data-aos="fade-up" data-aos-offset="40" data-aos-offset="10" data-aos-duration="600"
+                id="sendLocation">
+                <div class="inputBox">
+                    <h3>Full Name</h3>
+                    <input type="text" name="fullName" placeholder="your full name" required>
                 </div>
-                <!-- <div class="price"> $90.00 <span>$120.00</span> </div> -->
-                <a href="#" class="btn">book now</a>
-            </div>
-        </div>
-
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-2.jpg" data-lightbox="image-1" data-title="Kedarnath"><img src="/public/images/p-2.jpg" alt="image"></a>
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Kedarnath </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" name="placeName" placeholder="place name" required>
                 </div>
-                <!-- <div class="price"> $70.00 <span>$100.00</span> </div> -->
-                <a href="#" class="btn">book now</a>
-            </div>
-        </div>
-
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-3.jpg" data-lightbox="image-3" data-title="Nashik"><img src="/public/images/p-3.jpg" alt="image"></a>
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Nashik </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" name="noCount" placeholder="number of guests" required>
                 </div>
-                <!-- <div class="price"> $130.00 <span>$150.00</span> </div> -->
-                <a href="#" class="btn">book now</a>
-            </div>
-        </div>
-
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-4.jpg" data-lightbox="image-4" data-title="My caption"><img src="/public/images/p-4.jpg" alt="image"></a>
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Kanyakumari </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date" name="dateArrival" required>
                 </div>
-                <!-- <div class="price"> $50.00 <span>$90.00</span> </div> -->
-                <a href="#" class="btn">book now</a>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- section item start  -->
-    <div class="box-container secound_carousel owl-carousel ">
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-5.jpg" data-lightbox="image-1" data-title="Pune"><img src="/public/images/p-2.jpg" alt="image"></a>
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Pune </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date" name="dateLeaving" required>
                 </div>
-                <!-- <div class="price"> $70.00 <span>$100.00</span> </div> -->
-                <a href="#" class="btn">book now</a>
-            </div>
+                <button class="btn btn-primary" type="submit" id="load-btn">
+                    <div id="loading-con" style="display: none;">
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status">Loading... </span>
+                    </div>
+                    <div id="booking-con">BOOK NOW</div>
+                  </button>
+            </form>
+
         </div>
 
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-6.jpg" data-lightbox="image-3" data-title="Kashmir"><img src="/public/images/p-3.jpg" alt="image"></a>
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Kashmir </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <!-- <div class="price"> $130.00 <span>$150.00</span> </div> -->
-                <a href="#" class="btn">book now</a>
-            </div>
-        </div>
+    </section>
 
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <a href="/public/images/p-2.jpg" data-lightbox="image-4" data-title="Kanyakumari"><img src="/public/images/p-4.jpg" alt="image"></a>
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Kanyakumari </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <!-- <div class="price"> $50.00 <span>$90.00</span> </div> -->
-                <a href="#" class="btn">book now</a>
-            </div>
-        </div>
-    </div>
+    <!-- book section ends -->
 
-</section>
+    <!-- packages section starts  -->
 
-<!-- packages section ends -->
+    <section class="packages" id="packages">
 
-<!-- services section starts  -->
+        <h1 class="heading wow fadeIn">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
 
-<section class="services" id="services">
+        <div class="box-container owl-carousel first_carousel">
 
-    <h1 class="heading wow fadeIn">
-        <span>s</span>
-        <span>e</span>
-        <span>r</span>
-        <span>v</span>
-        <span>i</span>
-        <span>c</span>
-        <span>e</span>
-        <span>s</span>
-    </h1>
-
-    <div class="box-container">
-
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <i class="fas fa-hotel"></i>
-            <h3>affordable hotels</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
-        </div>
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <i class="fas fa-utensils"></i>
-            <h3>food and drinks</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
-        </div>
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <i class="fas fa-bullhorn"></i>
-            <h3>safty guide</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
-        </div>
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <i class="fas fa-globe-asia"></i>
-            <h3>around the world</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
-        </div>
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <i class="fas fa-plane"></i>
-            <h3>fastest travel</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
-        </div>
-        <div class="box wow fadeInUp" data-wow-duration="2s">
-            <i class="fas fa-hiking"></i>
-            <h3>adventures</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- gallery section starts  -->
-
-<section class="gallery" id="gallery">
-
-    <h1 class="heading wow fadeIn">
-        <span>g</span>
-        <span>a</span>
-        <span>l</span>
-        <span>l</span>
-        <span>e</span>
-        <span>r</span>
-        <span>y</span>
-    </h1>
-
-    <div class="box-container">
-
-        <div class="box wow fadeInUp"data-wow-duration="2s"  >
-            <img src="/public/images/p-1.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-2.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-3.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-4.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-5.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-6.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-1.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-2.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box wow fadeInUp"data-wow-duration="2s">
-            <img src="/public/images/p-3.jpg" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- gallery section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h1 class="heading">
-        <span>r</span>
-        <span>e</span>
-        <span>v</span>
-        <span>i</span>
-        <span>e</span>
-        <span>w</span>
-    </h1>
-
-    <div class="swiper-container review-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="/public/images/pic1.jpeg" alt="">
-                    <h3>Tejas Dhamale</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <a href="/public/images/p-1.jpg" data-lightbox="image-1" data-title="Mumbai"><img
+                        src="/public/images/p-1.jpg" alt="image"></a>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -519,13 +238,17 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <!-- <div class="price"> $90.00 <span>$120.00</span> </div> -->
+                    <a href="#" class="btn">book now</a>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="/public/images/pic4.jpeg" alt="">
-                    <h3>Darshan Wankhade</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <a href="/public/images/p-2.jpg" data-lightbox="image-1" data-title="Kedarnath"><img
+                        src="/public/images/p-2.jpg" alt="image"></a>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kedarnath </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -533,13 +256,17 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <!-- <div class="price"> $70.00 <span>$100.00</span> </div> -->
+                    <a href="#" class="btn">book now</a>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="/public/images/pic3.jpeg" alt="">
-                    <h3>Aditya Khupase</h3>
-                    <p>Lorem ipum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <a href="/public/images/p-3.jpg" data-lightbox="image-3" data-title="Nashik"><img
+                        src="/public/images/p-3.jpg" alt="image"></a>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Nashik </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -547,13 +274,17 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <!-- <div class="price"> $130.00 <span>$150.00</span> </div> -->
+                    <a href="#" class="btn">book now</a>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="/public/images/pic2.jpg" alt="">
-                    <h3>Vaibhav Malekar</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <a href="/public/images/p-4.jpg" data-lightbox="image-4" data-title="My caption"><img
+                        src="/public/images/p-4.jpg" alt="image"></a>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kanyakumari </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -561,58 +292,360 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <!-- <div class="price"> $50.00 <span>$90.00</span> </div> -->
+                    <a href="#" class="btn">book now</a>
                 </div>
             </div>
 
         </div>
 
-    </div>
+        <!-- section item start  -->
+        <div class="box-container secound_carousel owl-carousel ">
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <a href="/public/images/p-5.jpg" data-lightbox="image-1" data-title="Pune"><img
+                        src="/public/images/p-2.jpg" alt="image"></a>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Pune </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <!-- <div class="price"> $70.00 <span>$100.00</span> </div> -->
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
 
-</section>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <a href="/public/images/p-6.jpg" data-lightbox="image-3" data-title="Kashmir"><img
+                        src="/public/images/p-3.jpg" alt="image"></a>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kashmir </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <!-- <div class="price"> $130.00 <span>$150.00</span> </div> -->
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
 
-<!-- review section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-    
-    <h1 class="heading">
-        <span>c</span>
-        <span>o</span>
-        <span>n</span>
-        <span>t</span>
-        <span>a</span>
-        <span>c</span>
-        <span>t</span>
-    </h1>
-
-    <div class="row">
-
-        <div class="image">
-            <img src=/public/images/call.jpg alt="">
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <a href="/public/images/p-2.jpg" data-lightbox="image-4" data-title="Kanyakumari"><img
+                        src="/public/images/p-4.jpg" alt="image"></a>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kanyakumari </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <!-- <div class="price"> $50.00 <span>$90.00</span> </div> -->
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
         </div>
 
-        <form action="">
-            <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading wow fadeIn">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
+                    exercitationem ut minima itaque iusto ipsum corrupti!</p>
             </div>
-            <div class="inputBox">
-                <input type="number" placeholder="number">
-                <input type="text" placeholder="subject">
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
+                    exercitationem ut minima itaque iusto ipsum corrupti!</p>
             </div>
-            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn btn-submit" value="Send Request">
-        </form>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
+                    exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
+                    exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
+                    exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
+                    exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
 
-    </div>
-    
-</section>
+        </div>
 
-<!-- contact section ends -->
+    </section>
 
-<!-- brand section  -->
-<!-- <section class="brand-container">
+    <!-- services section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading wow fadeIn">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box wow fadeInUp" data-wow-duration="2s">
+                <img src="/public/images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="/public/images/pic1.jpeg" alt="">
+                        <h3>Tejas Dhamale</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                            fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="/public/images/pic4.jpeg" alt="">
+                        <h3>Darshan Wankhade</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                            fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="/public/images/pic3.jpeg" alt="">
+                        <h3>Aditya Khupase</h3>
+                        <p>Lorem ipum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                            fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="/public/images/pic2.jpg" alt="">
+                        <h3>Vaibhav Malekar</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                            fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src=/public/images/call.jpg alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn btn-submit" value="Send Request">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- brand section  -->
+    <!-- <section class="brand-container">
 
     <div class="swiper-container brand-slider">
         <div class="swiper-wrapper">
@@ -628,178 +661,179 @@
 </section> -->
 
 
-<!-- footer section  -->
+    <!-- footer section  -->
 
-<section class="footer">
+    <section class="footer">
 
-    <div class="box-container">
+        <div class="box-container">
 
-        <div class="box">
-            <h3>about us</h3>
-            <p>Veer-Pawas Tourism is one <br>of the popular Travel Agency <br>located in ,Amravati listed under Travel Agency in Amravati.</p>
+            <div class="box">
+                <h3>about us</h3>
+                <p>Veer-Pawas Tourism is one <br>of the popular Travel Agency <br>located in ,Amravati listed under
+                    Travel Agency in Amravati.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">india</a>
+                <p>49, 1st Floor, Gulshan Plaza, <br>Rajapeth, Amravati, Maharashtra, <br> India,India - 444605</p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/veerpawastourism/">facebook</a>
+                <a href="https://www.instagram.com/veerpawastourism?igsh=MWNjOWtjYndvMzVleg==">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
         </div>
-        <div class="box">
-            <h3>branch locations</h3>
-            <a href="#">india</a>
-            <p>49, 1st Floor, Gulshan Plaza, <br>Rajapeth, Amravati, Maharashtra, <br> India,India - 444605</p>
-        </div>
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">book</a>
-            <a href="#">packages</a>
-            <a href="#">services</a>
-            <a href="#">gallery</a>
-            <a href="#">review</a>
-            <a href="#">contact</a>
-        </div>
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="https://www.facebook.com/veerpawastourism/">facebook</a>
-            <a href="https://www.instagram.com/veerpawastourism?igsh=MWNjOWtjYndvMzVleg==">instagram</a>
-            <a href="#">twitter</a>
-            <a href="#">linkedin</a>
-        </div>
 
-    </div>
+        <h1 class="credit"> created by <span> Tejas Dhamale </span> | all rights reserved! </h1>
 
-    <h1 class="credit"> created by <span> Tejas Dhamale </span> | all rights reserved! </h1>
-
-</section>
-<!-- top to bottom scrolling  -->
-<div id="totopscroller"></div>
-<!-- preloader  -->
-<div class="fakeLoader"></div>
+    </section>
+    <!-- top to bottom scrolling  -->
+    <div id="totopscroller"></div>
+    <!-- preloader  -->
+    <div class="fakeLoader"></div>
 
 
 
 
+    <!-- MTA -->
+    <script src="/public/js/mail.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    
 
 
 
 
+    <!-- jaquery cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- swiper-bundle.min.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- wow js -->
+    <script src="/public/js/wow.min.js"></script>
+    <!-- lightbox.js -->
+    <script src="/public/js/lightbox.js"></script>
+    <!-- owl.carousel.min.js -->
+    <script src="/public/js/owl.carousel.min.js"></script>
+    <!-- top to bottom  -->
+    <script src="/public/js/jquery.totop.js"></script>
+    <script src="/public/js/fakeLoader.min.js"></script>
+    <!-- scroling aos js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <!-- custom js file link  -->
+    <script src="/public/js/script.js"></script>
+    <script>
+        // owl carousel
+        $('.first_carousel').owlCarousel({
+            autoplay: true,
+            margin: 10,
+            smartSpeed: 1000,
+            nav: true,
+            responsiveClass: true,
 
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
 
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: false,
+                    loop: true,
 
+                }
+            }
+        })
 
+        // secound carousel 
+        // owl carousel
+        $('.secound_carousel').owlCarousel({
+            autoplay: true,
+            rtl: true,
+            nav: true,
+            margin: 10,
+            responsiveClass: true,
+            smartSpeed: 1000,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
 
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true,
 
+                }
+            }
+        })
 
-<!-- jaquery cdn  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- swiper-bundle.min.js -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- wow js -->
-<script src="/public/js/wow.min.js"></script>
-<!-- lightbox.js -->
-<script src="/public/js/lightbox.js"></script>
-<!-- owl.carousel.min.js -->
-<script src="/public/js/owl.carousel.min.js"></script>
-<!-- top to bottom  -->
-<script src="/public/js/jquery.totop.js"></script>
-<script src="/public/js/fakeLoader.min.js"></script>
-<!-- scroling aos js  -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        // top ot bottom 
+        $(function () {
+            $('#totopscroller').totopscroller({
+                link: 'http://127.0.0.1:5500/index.html#' // show a link button
+            });
+        })
 
-<!-- custom js file link  -->
-<script src="/public/js/script.js"></script>
-<script>
-    // owl carousel
-    $('.first_carousel').owlCarousel({
-    autoplay:true,
-    margin:10,
-    smartSpeed: 1000,
-    nav:true,
-    responsiveClass:true,
+        // wow js 
+        new WOW().init();
 
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-           
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:false,
-            loop:true,
-          
-        }
-    }
-})
+        // preloader
+        $.fakeLoader();
 
-// secound carousel 
- // owl carousel
- $('.secound_carousel').owlCarousel({
-    autoplay:true,
-    rtl:true,
-    nav:true,
-    margin:10,
-    responsiveClass:true,
-    smartSpeed: 1000,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-           
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:true,
-          
-        }
-    }
-})
+        // aos scrolling  
+        AOS.init();
+        //  water Remote Playback
+        $('.water').ripples({
 
-// top ot bottom 
-$(function(){
-$('#totopscroller').totopscroller({
-link:'http://127.0.0.1:5500/index.html#' // show a link button
-});
-})
+            // Image Url
+            imageUrl: null,
 
-// wow js 
-new WOW().init();
+            // The width and height of the WebGL texture to render to. 
+            // The larger this value, the smoother the rendering and the slower the ripples will propagate.
+            resolution: 256,
 
-// preloader
-$.fakeLoader();
+            // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
+            dropRadius: 20,
 
-// aos scrolling  
-AOS.init();
-  //  water Remote Playback
-    $('.water').ripples({
+            // Basically the amount of refraction caused by a ripple. 
+            // 0 means there is no refraction.
+            perturbance: 0.04,
 
-      // Image Url
-      imageUrl: null,
+            // Whether mouse clicks and mouse movement triggers the effect.
+            interactive: true,
 
-      // The width and height of the WebGL texture to render to. 
-      // The larger this value, the smoother the rendering and the slower the ripples will propagate.
-      resolution: 256,
+            // The crossOrigin attribute to use for the affected image. 
+            crossOrigin: ''
+        });
 
-      // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
-      dropRadius: 20,
-
-      // Basically the amount of refraction caused by a ripple. 
-      // 0 means there is no refraction.
-      perturbance: 0.04,
-
-      // Whether mouse clicks and mouse movement triggers the effect.
-      interactive: true,
-
-      // The crossOrigin attribute to use for the affected image. 
-      crossOrigin: ''
-    });
-   
-</script>
+    </script>
 
 </body>
+
 </html>
