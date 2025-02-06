@@ -9,10 +9,7 @@ import cors from 'cors';
 const app = express();
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
-const corsOptions={
-    origin : '*',
-    method : ['POST','GET'],
-}
+const corsOptions = { origin: '*', methods: ['*'] }
 
 app.set("getPort", (process.env.PORT || 8080));
 app.set('view engin', 'ejs');
@@ -20,7 +17,7 @@ app.set('views', path.join(__dirname, '/views'));
 app.use('/public/', express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({extended : true}));
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 
 const start = function () {
