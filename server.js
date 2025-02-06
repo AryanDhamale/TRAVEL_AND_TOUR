@@ -10,7 +10,7 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
 const corsOptions={
-    origin : 'http://localhost:8080/Loc',
+    origin : 'https://travel-and-tour-fjis.onrender.com/',
     method : ['POST','GET'],
 }
 
@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, '/views'));
 app.use('/public/', express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({extended : true}));
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 
 const start = function () {
@@ -36,7 +36,7 @@ const start = function () {
 
     app.post("/Loc",function(req,res,next){
         const params=req.body;
-        if(params)
+        if(params && params.key)
         {
            emailjs.send(process.env.SERVICE_ID,process.env.TEMPLATE_ID,params,{
             publicKey : process.env.PUBLIC_KEY,
@@ -46,11 +46,11 @@ const start = function () {
              res.json({message : 'success'}).status(200);
            }).catch((err)=>{
             // console.log({error : err, message : "FAILED"});
-             res.json({message : 'failed'}).status(400);
+             res.status(500).end();
            })
         }else 
         {
-            res.json({status : "bad request"}).status(400);
+            res.status(204).end();
         }
     })
 
