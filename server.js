@@ -10,7 +10,7 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
 const corsOptions={
-    origin : 'https://travel-and-tour-fjis.onrender.com/',
+    origin : '*',
     method : ['POST','GET'],
 }
 
