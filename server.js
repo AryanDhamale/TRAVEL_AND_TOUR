@@ -9,7 +9,7 @@ import cors from 'cors';
 const app = express();
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
-const corsOptions = { origin: '*', methods: ['*'] }
+const corsOptions = { origin: process.env.FLAG==="true" ? "https://travel-and-tour-fjis.onrender.com/Loc" : "http://localhost:8080/Loc", methods: ["GET","POST"] }
 
 app.set("getPort", (process.env.PORT || 8080));
 app.set('view engin', 'ejs');
@@ -26,10 +26,14 @@ const start = function () {
         console.log(`listing at port no : ${port}`);
     });
 
+    //  DON'T CHAGE THIS CODE TO VIOLATE SOME CONDITION  // 
+    app.use((req,res,next)=>{
+        res.render("404NotFound.ejs");
+    })
 
-    app.get('/', (req, res) => {
-        res.render('index.ejs');
-    });
+    app.get('/',function(req,res){
+        res.render("index.ejs");
+    }); 
 
     app.post("/Loc",function(req,res,next){
         const params=req.body;

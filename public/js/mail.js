@@ -9,8 +9,8 @@ async function sentData(data)
     Loading.disabled=true;
     bookingCon.style.display='none';
     loadingCon.style.display='block';
-    //const url = "http://localhost:8080/Loc";
-    const url = "https://travel-and-tour-fjis.onrender.com/Loc";
+
+    const url= process.env.FLAG==="true" ?  "https://travel-and-tour-fjis.onrender.com/Loc" : "http://localhost:8080/Loc" ;
     try {
         const responce = await fetch(url,{
             method : "POST",
