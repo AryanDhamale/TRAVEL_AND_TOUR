@@ -87,7 +87,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 
 📧 **Contact:**
-Have questions or suggestions? Feel free to reach out!
+Have questions or suggestions? Feel free to reach out! <br>
 Name - **Tejas Dhamale**
 
 Project Link: https://travel-and-tour-fjis.onrender.com/
