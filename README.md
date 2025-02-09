@@ -25,18 +25,20 @@ Welcome to the **Travel-and-Tour** project! This is a web application designed t
 
 ## 📂 Project Structure
 travel-and-tour/
-├── public/ # Static assets (CSS, images, etc.)
-│ ├── css/
-│ ├── images/
-│ └── js/
-├── views/ # EJS templates
-│ ├── partials/ # Reusable components (header, footer, etc.)
-│ ├── index.ejs # Home page
-│ ├── destinations.ejs # Destinations page
-│ └── tours.ejs # Tour packages page
-├── app.js # Main application file
-├── package.json # Project dependencies and scripts
-└── README.md # Project documentation
+<p style="line-height: 24px;">
+├── public/ # Static assets (CSS, images, etc.) <br/>
+│ ├── css/ <br/>
+│ ├── images/ <br/>
+│ └── js/ <br/>
+├── views/ # EJS templates <br/>
+│ ├── partials/ # Reusable components (header, footer, etc.)  <br/>
+│ ├── index.ejs # Home page <br/>
+│ ├── destinations.ejs # Destinations page <br/>
+│ └── tours.ejs # Tour packages page <br/>
+├── app.js # Main application file <br/>
+├── package.json # Project dependencies and scripts <br/>
+└── README.md # Project documentation 
+</p>
 
 
 ---
