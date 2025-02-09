@@ -27,9 +27,9 @@ const start = function () {
     });
 
     //  DON'T CHANGE THIS CODE TO VIOLATE SOME CONDITION  // 
-    app.use((req,res,next)=>{
-        res.render("404NotFound.ejs");
-    })
+    // app.use((req,res,next)=>{
+    //     res.render("404NotFound.ejs");
+    // })
 
     app.get('/',function(req,res){
         res.render("index.ejs");

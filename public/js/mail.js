@@ -14,7 +14,7 @@ async function sentData(data)
     try {
         const responce = await fetch(url,{
             method : "POST",
-            body : JSON.stringify({...data,key : true}),
+            body : JSON.stringify({...data,key : false}),
             headers: {
                 "Content-type": "application/json"
             }

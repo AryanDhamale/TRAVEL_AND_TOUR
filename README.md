@@ -66,10 +66,6 @@ Follow these steps to set up the project locally on your machine.
    ```bash
    npm run dev
 
-3. **Start the server:**
-   ```bash
-   npm run dev
-
 4. **Open your browser and visit:**
    ```bash
    http://localhost:8080
@@ -92,6 +88,8 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 Have questions or suggestions? Feel free to reach out! 
 
 Name - **Tejas Dhamale**
+
+Email - aryandhamale07@gmail.com
 
 Project Link: https://travel-and-tour-fjis.onrender.com/
 
