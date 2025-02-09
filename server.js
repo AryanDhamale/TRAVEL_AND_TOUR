@@ -26,7 +26,7 @@ const start = function () {
         console.log(`listing at port no : ${port}`);
     });
 
-    //  DON'T CHAGE THIS CODE TO VIOLATE SOME CONDITION  // 
+    //  DON'T CHANGE THIS CODE TO VIOLATE SOME CONDITION  // 
     app.use((req,res,next)=>{
         res.render("404NotFound.ejs");
     })
