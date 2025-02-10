@@ -5,7 +5,7 @@
 }
 
 *{
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
   margin:0; padding:0;
   box-sizing: border-box;
   text-transform: capitalize;
@@ -108,134 +108,7 @@ section{
   padding: 5px 8px;
   margin-top: 8px;
 }
-/* .btn{
-  position: relative;
-  display: inline-block;
-  margin-top: 1rem;
-  background:var(--orange);
-  color:#fff;
-  padding: 10px 35px;
-  cursor: pointer;
-  font-size: 1.7rem;
-  z-index: 0;
- 
-} */
-/* .btn::before{
-  content: "";
-  position: absolute;
-  color: #fff;
-  width: 0;
-  height: 100%;
-  background-color: #000;
-  top: 0;
-  left: 0;
-  transition: all .3s ease-in-out;
-  z-index: 0;
-} */
 
-/* .btn:hover::before{
-  right: 0;
-  width: 100%;
-  z-index: -1;
-
-} */
-/* .btn-submit:hover{
-  letter-spacing: 1px;
-  background-color: #000;
-} */
-
-header{
-  position: fixed;
-  top:0;
-  left: 0;
-  right:0;
-  background: #000;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:2rem 9%;
-}
-
-header .logo{
-  display: flex;
-      align-items: flex-end;
-      width: 145px;
-  
-}
-
-header .logo span{
-  color:var(--orange);
-  
-}
-
-header .navbar a{
-  color:#fff;
-  font-size: 2rem;
-  margin:0 .8rem;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(49, 41, 25, 0);
-  transition: all .3s ease-in-out;
-}
-
-header .navbar a:hover{
-  color:var(--orange);
-  padding-bottom: 10px;
-  border-bottom: 1px solid orange;
- 
-}
-
-header .icons i{
-  font-size: 2.5rem;
-  color:#fff;
-  cursor: pointer;
-  margin-right: 2rem;
-  /* padding-bottom: 20px; */
-  border-bottom: 1px solid rgba(49, 41, 25, 0);
-  transition: all .3s ease-in-out;
-}
-
-header .icons i:hover{
-  color:var(--orange);
-  padding-bottom: 10px;
-  border-bottom: 1px solid orange;
-}
-
-header .search-bar-container{
-  position: absolute;
-  top:100%; left: 0; right:0;
-  padding:1.5rem 2rem;
-  background:#333;
-  border-top: .1rem solid rgba(255,255,255,.2);
-  display: flex;
-  align-items: center;
-  z-index: 1001;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-
-header .search-bar-container.active{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-header .search-bar-container #search-bar{
-  width:100%;
-  padding:1rem;
-  text-transform: none;
-  color:#333;
-  font-size: 1.7rem;
-  border-radius: .5rem;
-}
-
-header .search-bar-container label{
-  color:#fff;
-  cursor: pointer;
-  font-size: 3rem;
-  margin-left: 1.5rem;
-}
-
-header .search-bar-container label:hover{
-  color:var(--orange);
-}
 
 .login-form-container{
   position: fixed;

@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CountBox
+{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #0d6efd;
+    color: white;
+    position: absolute;
+    bottom: 150px;
+    left: 142px;
+}

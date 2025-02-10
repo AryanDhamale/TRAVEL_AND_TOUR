@@ -9,7 +9,9 @@ import cors from 'cors';
 const app = express();
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
-const corsOptions = { origin: process.env.FLAG==="true" ? "https://travel-and-tour-fjis.onrender.com/Loc" : "http://localhost:8080/Loc", methods: ["GET","POST"] }
+//process.env.FLAG==="true" ? "https://travel-and-tour-fjis.onrender.com/Loc" : "http://localhost:8080"
+const corsOptions = { origin: "*", methods: ["*"] }
+let COUNT=0;
 
 app.set("getPort", (process.env.PORT || 8080));
 app.set('view engin', 'ejs');
@@ -32,14 +34,16 @@ const start = function () {
     // })
 
     app.get('/',function(req,res){
-        res.render("index.ejs");
+        COUNT++;
+        res.render("index.ejs",{count : COUNT});
     }); 
 
     app.post("/Loc",function(req,res,next){
         const params=req.body;
-        if(params && params.key)
+        if(params)
         {
-           emailjs.send(process.env.SERVICE_ID,process.env.TEMPLATE_ID,params,{
+           const tempateID=params.key ? process.env.TEMPLATE_ID_BOOK : process.env.TEMPLATE_ID_CONTACT ; 
+           emailjs.send(process.env.SERVICE_ID,tempateID,params,{
             publicKey : process.env.PUBLIC_KEY,
             privateKey : process.env.PRIVATE_KEY
            }).then((responce)=>{
