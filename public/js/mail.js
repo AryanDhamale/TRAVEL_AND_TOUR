@@ -17,12 +17,12 @@ async function sendData(data,keyLoc) {
     {
         contactBtn.disabled=true;
     }
-    const url="https://travel-and-tour-fjis.onrender.com/Loc" ;
-    //const url = "http://localhost:8080/Loc";
+    //const url="https://travel-and-tour-fjis.onrender.com/Loc" ;
+    const url = "http://localhost:8080/Loc";
     try {
         const responce = await fetch(url, {
             method: "POST",
-            body: JSON.stringify({ ...data, key: keyLoc }),
+            body: JSON.stringify({ ...data, key: keyLoc , send : false}),
             headers: {
                 "Content-type": "application/json"
             }
