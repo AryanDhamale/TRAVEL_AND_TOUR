@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = path.dirname(__filename); // get the name of the directory
 //process.env.FLAG==="true" ? "https://travel-and-tour-fjis.onrender.com/Loc" : "http://localhost:8080"
 const corsOptions = { origin: "*", methods: ["*"] }
-let COUNT = 0;
+let COUNT = 200;
 
 app.set("getPort", (process.env.PORT || 8080));
 app.set('view engin', 'ejs');

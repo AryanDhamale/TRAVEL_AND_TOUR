@@ -22,7 +22,7 @@ async function sendData(data,keyLoc) {
     try {
         const responce = await fetch(url, {
             method: "POST",
-            body: JSON.stringify({ ...data, key: keyLoc , send : false}),
+            body: JSON.stringify({ ...data, key: keyLoc , send : true}),
             headers: {
                 "Content-type": "application/json"
             }
@@ -60,14 +60,16 @@ function clear(collection)
 if (application) {
     application.onsubmit = function (event) {
         event.preventDefault();
-        const formData = new FormData(application);
-        const wanted_instruciton = {
-            fullName: formData.get("fullName"),
-            mobileNo: formData.get("mobileNo"),
-            whereTo: formData.get("placeName"),
-            howMany: formData.get("noCount"),
-            arrivals: formData.get("dateArrival"),
-            leaving: formData.get("dateLeaving")
+        const wanted_instruciton=
+        {
+           fullName : this.elements[0].value, 
+           mobileNo : this.elements[1].value,
+           email : this.elements[2].value, 
+           destination : this.elements[3].value,
+           startArrival : this.elements[4].value,
+           endArrival : this.elements[5].value , 
+           noAdult : this.elements[6].value , 
+           noChild : this.elements[7].value , 
         }
         sendData(wanted_instruciton,true);
         clear(this.elements);
