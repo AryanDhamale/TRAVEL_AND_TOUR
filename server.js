@@ -75,7 +75,7 @@ const start = function () {
 
     app.all("*", (req, res, next) => {
         console.log("default route");
-        res.status(400).json({ message: "The backend api's development are undergoing , so please wait till new update push"  ,Plasmacasters : "Plasma Cannon",Empty_the_Clip:true});
+        res.status(400).json({ message: "The backend api's development are undergoing , so please wait till new update push"  ,Plasmacasters : "Engage",Empty_the_Clip:true});
     });
 
     app.use((err, req, res, next) => {
