@@ -42,6 +42,11 @@ const start = function () {
    app.get("/home/book",function(req,res,next){
     COUNT++;
     res.render("book2.ejs",{count:COUNT});
+   });
+
+   app.get("/home/review",function(req,res,next){
+    COUNT++;
+    res.render("feedback.ejs",{count:COUNT});
    })
 
     app.post("/Loc",wrapAround(async function (req, res, next) {
