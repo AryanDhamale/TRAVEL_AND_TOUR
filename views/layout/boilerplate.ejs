@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and travel agency</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon"
+        href="https://preview.redd.it/what-if-apex-cybernetics-and-shao-industries-collaborated-v0-gw1q9rwubnwc1.jpg?width=505&format=pjpg&auto=webp&s=5cc6de17fe28cd31156fc422784b7ac073feba14">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- wow js -->
+    <link rel="stylesheet" href="/public/css/animate.css">
+    <link rel="stylesheet" href="/public/css/lightbox.css">
+    <!-- owl crouse css file  -->
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/public/css/fakeLoader.min.css">
+    <!-- scroling aos.css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/countBox.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+
+ <%-include('../includes/navbar.ejs')%>
+ <div class="root"><%-body-%></div>
+ <%-include('../includes/footer.ejs')%>
+
+  <!-- MTA -->
+  <script src="/public/js/mail.js"></script>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- jaquery cdn  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- swiper-bundle.min.js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- wow js -->
+  <script src="/public/js/wow.min.js"></script>
+  <!-- lightbox.js -->
+  <script src="/public/js/lightbox.js"></script>
+  <!-- owl.carousel.min.js -->
+  <script src="/public/js/owl.carousel.min.js"></script>
+  <!-- top to bottom  -->
+  <script src="/public/js/jquery.totop.js"></script>
+  <script src="/public/js/fakeLoader.min.js"></script>
+  <!-- scroling aos js  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="/public/js/script.js"></script>
+  <script>
+      // owl carousel
+      $('.first_carousel').owlCarousel({
+          autoplay: true,
+          margin: 10,
+          smartSpeed: 1000,
+          nav: true,
+          responsiveClass: true,
+
+          responsive: {
+              0: {
+                  items: 1,
+                  nav: true
+
+              },
+              600: {
+                  items: 2,
+                  nav: false
+              },
+              1000: {
+                  items: 3,
+                  nav: false,
+                  loop: true,
+
+              }
+          }
+      })
+
+      // secound carousel 
+      // owl carousel
+      $('.secound_carousel').owlCarousel({
+          autoplay: true,
+          rtl: true,
+          nav: true,
+          margin: 10,
+          responsiveClass: true,
+          smartSpeed: 1000,
+          responsive: {
+              0: {
+                  items: 1,
+                  nav: true
+
+              },
+              600: {
+                  items: 2,
+                  nav: false
+              },
+              1000: {
+                  items: 3,
+                  nav: true,
+                  loop: true,
+
+              }
+          }
+      })
+
+      // top ot bottom 
+      $(function () {
+          $('#totopscroller').totopscroller({
+              link: 'http://localhost:8080' // show a link button
+          });
+      })
+
+      // wow js 
+      new WOW().init();
+
+      // preloader
+      $.fakeLoader();
+
+      // aos scrolling  
+      AOS.init();
+  </script>
+</html>

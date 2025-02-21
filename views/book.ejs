@@ -1,0 +1,67 @@
+<%layout("/layout/boilerplate")%>
+<body>
+    
+   <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+     <form action="#" class="border border-1 rounded px-3 pb-3 pt-1 needs-validation" style="width: 35rem;">
+        <p class="caption fs-4 text-center text-warning" style="font-weight: 600;">Book now your dream place with us.</p>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="full-name"  required>
+            <label for="floatingInput">Full-name</label>
+            <div class="invalid-feedback">
+                Name is required
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="mobile-no." required>
+            <label for="floatingInput">Mobile-no.</label>
+            <div class="invalid-feedback">
+                Please provide valid phone no.
+            </div>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
+            <div class="invalid-feedback">
+                Invalid email address
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Destination" required>
+            <label for="floatingInput">Destination</label>
+            <div class="invalid-feedback">
+                Destinaiton is required
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="date" class="form-control" id="floatingInput" placeholder="s-date" required>
+            <label for="floatingInput">Start-date</label>
+            <div class="invalid-feedback">
+                Start-date is required
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="date" class="form-control" id="floatingInput" placeholder="e-date" required>
+            <label for="floatingInput">End-date</label>
+            <div class="invalid-feedback">
+                End-date is required
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="adult" required>
+            <label for="floatingInput">No.of Adult</label>
+            <div class="invalid-feedback">
+                Required
+            </div>
+        </div>
+        <div class="form-floating  mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="child" required>
+            <label for="floatingInput">No.of Child</label>
+            <div class="invalid-feedback">
+                Required
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Book Now</button>
+        <button type="reset" class="btn btn-outline-danger" style="margin-left: 0.5rem;">Clear</button>
+     </form>
+   </div>
+</body>

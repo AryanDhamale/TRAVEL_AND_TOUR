@@ -28,6 +28,7 @@ async function sendData(data,keyLoc) {
             }
         });
         const MSG = await responce.json();
+        if(MSG.message==="LTA" || MSG.message==="FAILED") throw "some Error occured";
         console.log(MSG);
         alert("Your email has sent succesfully!");
 

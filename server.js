@@ -4,6 +4,10 @@ import { fileURLToPath } from 'url';
 import emailjs from '@emailjs/nodejs';
 import 'dotenv/config';
 import cors from 'cors';
+import wrapAround from "./utils/WrapAsync.js";
+import ExpressError from "./utils/ExpressError.js";
+import { Location } from "./init/Locatino.js";
+import engine from "ejs-mate";
 
 
 const app = express();
@@ -15,29 +19,13 @@ let COUNT = 0;
 
 app.set("getPort", (process.env.PORT || 8080));
 app.set('view engin', 'ejs');
+app.engine("ejs",engine);
 app.set('views', path.join(__dirname, '/views'));
 app.use('/public/', express.static(path.join(__dirname, "/public")));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.urlencoded({ extended: true ,limit:"16kb"}));
+app.use(express.json({limit:"16kb"}));
 app.use(cors(corsOptions));
 
-class ExpressError extends Error {
-    constructor(status, message) {
-        super();
-        this.status = status;
-        this.message = message;
-    }
-}
-
-function wrapAround(fn) {
-    return function (req, res, next) {
-        try {
-            fn(req, res, next);
-        } catch (err) {
-            next(err);
-        }
-    }
-}
 
 
 const start = function () {
@@ -46,17 +34,21 @@ const start = function () {
         console.log(`listing at port no : ${port}`);
     });
 
-    app.get('/', function (req, res) {
+    app.get("/home", function (req, res) {
         COUNT++;
-        res.render("index.ejs", { count: COUNT });
+        res.render("home.ejs", { count: COUNT , Location});
     });
 
+   app.get("/home/book",function(req,res,next){
+    COUNT++;
+    res.render("book2.ejs",{count:COUNT});
+   })
 
     app.post("/Loc",wrapAround(async function (req, res, next) {
         const params = req.body;
         if(!params.send)
         {
-            next(new ExpressError(503,"can't send"));
+            next(new ExpressError(503,"LTA"));
             return;
         }
         if (params) {

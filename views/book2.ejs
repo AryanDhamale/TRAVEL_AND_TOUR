@@ -1,0 +1,70 @@
+<%layout("/layout/boilerplate")%>
+<body>
+    <section class="book wow fadeInUp" data-wow-duration="4s" id="book">
+
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image " data-aos="fade-right" data-aos="fade-right" data-aos-offset="10"
+                data-aos-duration="500">
+                <img src="/public/images/book-img.svg" alt="">
+            </div>
+
+            <form action="#" data-aos="fade-up" data-aos-offset="40" data-aos-offset="10" data-aos-duration="600"
+                id="sendLocation">
+                <div class="inputBox">
+                    <h3>Full Name</h3>
+                    <input type="text" name="fullName" placeholder="your full name" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Mobile no.</h3>
+                    <input type="number" name="mobileNo" placeholder="mobile no" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Email</h3>
+                    <input type="email" name="email" placeholder="place name" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Destination</h3>
+                    <input type="text" name="destination" placeholder="number of guests" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Start-date</h3>
+                    <input type="date" name="startArrival" required>
+                </div>
+                <div class="inputBox">
+                    <h3>End-date</h3>
+                    <input type="date" name="endLeaving" required>
+                </div>
+                <div class="inputBox">
+                    <h3>No.of Adult</h3>
+                    <input type="number" name="noAdult" required>
+                </div>
+                <div class="inputBox">
+                    <h3>No.of Child</h3>
+                    <input type="number" name="noChild" required>
+                </div>
+                <button class="btn btn-primary btn-lg" type="submit" id="load-btn">
+                    <div id="loading-con" style="display: none;">
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status">Loading... </span>
+                    </div>
+                    <div id="booking-con">BOOK NOW</div>
+                  </button>
+                  <button type="reset" class="btn btn-outline-danger btn-lg" style="margin-left: 0.5rem; margin-top: 1rem;">Clear</button>
+            </form>
+
+        </div>
+
+    </section>
+</body>
