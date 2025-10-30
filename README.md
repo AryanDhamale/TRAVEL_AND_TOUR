@@ -91,6 +91,6 @@ Name - **Tejas Dhamale**
 
 Email - aryandhamale07@gmail.com
 
-Project Link: https://travel-and-tour-fjis.onrender.com/
+Project Link: https://travel-and-tour-tw5m.onrender.com/home
 
 **Happy Traveling! ✈️🌴**
