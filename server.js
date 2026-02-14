@@ -78,7 +78,7 @@ const start = function () {
     });
 
     app.use((err, req, res, next) => {
-        const { status = 503, message = "Something happed at server side" } = err;
+        const { status = 503, message = "Something happned at server side" } = err;
         console.log("---ERROR---");
         res.status(status).json({ message });
     })
