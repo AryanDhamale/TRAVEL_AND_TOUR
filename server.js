@@ -27,7 +27,6 @@ app.use(express.json({limit:"16kb"}));
 app.use(cors(corsOptions));
 
 
-
 const start = function () {
     const port = app.get("getPort");
     app.listen(port, (req, res) => {
